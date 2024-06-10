@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular probabilidad menor en DN</title>
+</head>
+<body>
+    <h1>Calcular probabilidad menor en Distribución Normal</h1>
+    <form method="post">
+        <table>
+            <tr>
+                <td><label>Valor x</td>
+                <td><input type="text" name="x" id="x" value="{{x}}"></td>
+            </tr>
+            <tr>
+                <td><label>Valor de media</td>
+                <td><input type="text" name="media" id="media" value="{{media}}"></td>
+            </tr>
+            <tr>
+                <td><label">Desviación estándar</td>
+                <td><input type="text" name="desviacion" id="desviacion" value="{{desviacion}}"></td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <input type="submit" value="Calcular">
+                </td>
+            </tr>
+            <tr>
+                <td>Resultado:</td>
+                <td>{{resultado}}</td>
+            </tr>
+        </table>
+    </form>
+    <a href="{{url_for('inicio')}}">Regresar</a>
+</body>
+</html>
